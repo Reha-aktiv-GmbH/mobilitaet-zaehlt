@@ -2,6 +2,10 @@
     RewriteEngine On
     RewriteBase /
 
+    ## Redirect from non-www to www (remove the two lines below to enable)
+    RewriteCond %{HTTP_HOST} !^www [NC]
+    RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/$1 [R=301,L]
+
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteRule ^(.*)$ index.php [QSA,L]
 </IfModule>

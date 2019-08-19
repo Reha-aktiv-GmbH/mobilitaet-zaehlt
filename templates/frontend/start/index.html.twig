@@ -342,7 +342,7 @@
             margin-left:6rem;
         }
 
-        h3.info {
+        h4.info {
             opacity: 0;
             -webkit-transition: opacity 1s ease-in-out;
             -moz-transition: opacity 1s ease-in-out;
@@ -350,7 +350,7 @@
             -o-transition: opacity 1s ease-in-out;
             transition: opacity 1s ease-in-out;
         }
-        .in-visible h3.info {
+        .in-visible h4.info {
             opacity: 1;
 
         }
@@ -396,163 +396,27 @@
     <div class="parallax-window" data-parallax="scroll" data-image-src="/VD1_5037_CMYK_web.jpg">
         <div class="parallax-content"></div>
     </div>
-    <div class="container py-4">
-        <h1 class="display-3">Mobilität – weil dabei sein wichtig ist!</h1>
-        <p class="lead">Mobilität ist ein wichtiger Faktor für ein möglichst selbst bestimmtes Leben.</p>
-        <p class="lead"> Ohne Mobilität ist ein "Dabei sein" schwierig, vor allem dann, wenn die Gesundheit eingeschränkt ist. Deshalb braucht es Lösungen, die Ihnen weiterhelfen. Jeden Tag. Ob Rollatoren, Aktiv-Rollstühle oder E-Scooter: Mit unseren Experten finden Sie die für Sie passende Lösung!</p>
-    </div>
+    {# Start Content Intro Mobilität #}
     <div class="container marketing py-4">
-        <h2 class="display-4">Mobilität zählt!</h2>
-        <p class="lead"><strong>Rollatoren</strong> gehören inzwischen zum Alltag. Sie sind nützliche Begleiter, wenn Gleichgewicht und Kraft beim Gehen nicht mehr so richtig mitmachen. Wir bieten mit unserer Rehasense-Serie hochwertige Begleiter für jede Gelegenheit!</p>
+        {% include 'frontend/start/intro.mobilität.html.twig' %}
     </div>
-    <div class="parallax-window" data-parallax="scroll" data-image-src="/SERVER (Champagne) - front right view (Custom) copy.jpg"></div>
-    <div class="container marketing py-4">
-        <div class="row my-2">
-            <div class="col-5 animation-element slide-left">
-                <div class="bg-lightblue slider-left">
-                    <div class="header">
-                    <h3 class="text-uppercase p-3">Server</h3>
-                    </div>
-                </div>
-            </div>
-            <div class="col-7">
-                <div class="sub-header">
-                <h4 class="text-uppercase p-3 info text-right bg-lightblue">Stylisch &amp; sehr funktionell</h4>
-                </div>
-            </div>
-        </div>
-        <div class="row featurette">
-            <div class="col-5 animation-element slide-left">
-                <img src="/Server-Front_web.png" class="img-fluid mx-auto" />
-            </div>
-            <div class="col-7">
-                <h2 class="featurette-heading">Rollator Server</h2>
-                <p class="lead">Der Server ist das Einstiegsmodell in die Rehasense-Serie. Er ist wendig, stabil und höhenverstellbar.<br><u>Praktisches Extra:</u> die abnehmbare Einkaufstasche.</p>
-                <div class="d-flex justify-content-between">
-                    <p class="lead text-red"><strong>Lieferumfang</strong></p>
-                    <p class="lead text-red"><strong>Technische Details:</strong></p>
-                </div>
-                <div class="d-flex justify-content-between">
-                    <ul>
-                        <li>Ankipphilfe</li>
-                        <li>Einkaufstasche</li>
-                        <li>Stockhalter</li>
-                    </ul>
-                    <ul>
-                        <li>Gewicht 6,7 - 7,0 kg</li>
-                        <li>Max. Nutzlast 150 kg</li>
-                        <li>Sitzhöhe 50 - 62 cm</li>
-                        <li>Sitzbreite 46 cm</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="parallax-window" data-parallax="scroll" data-image-src="/ROUTER (Wine Red) - front right view (Custom).png"></div>
-    <div class="container marketing py-4">
-        <div class="row my-2">
-            <div class="col-5 animation-element slide-left">
-                <div class="bg-blue slider-left">
-                    <div class="header">
-                        <h3 class="text-uppercase p-3">Router</h3>
-                    </div>
-                </div>
-            </div>
-            <div class="col-7">
-                <div class="sub-header">
-                    <h4 class="text-uppercase p-3 info text-right bg-blue">Sehr leichter Alleskönner</h4>
-                </div>
-            </div>
-        </div>
-        <div class="row featurette">
-            <div class="col-5 animation-element slide-left">
-                <img src="/Router-Front_web.png" class="img-fluid mx-auto" />
-            </div>
-            <div class="col-7">
-                <h2 class="featurette-heading">Rollator Router</h2>
-                <p class="lead">Das Leichtgewicht - in der Komfort- Variante mit Softrädern und Stockhalter ausgestattet.</p>
-                <div class="d-flex justify-content-between">
-                    <p class="lead text-red"><strong>Lieferumfang</strong></p>
-                    <p class="lead text-red"><strong>Technische Details:</strong></p>
-                </div>
-                <div class="d-flex justify-content-between">
-                    <ul>
-                        <li>Ergonomische Griffe</li>
-                        <li>Ankipphilfe</li>
-                        <li>Einkaufstasche</li>
-                        <li>Soft-Reifen</li>
-                        <li>Stockhalter</li>
-                        <li>Rückengurt</li>
-                    </ul>
-                    <ul>
-                        <li>Gewicht 6,6 - 6,8 kg</li>
-                        <li>Max. Nutzlast 150 kg</li>
-                        <li>Sitzhöhe 50 - 62 cm</li>
-                        <li>Sitzbreite 46 cm</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="parallax-window" data-parallax="scroll" data-image-src="/ATHLON SL - Front right view (Custom).png"></div>
-    <div class="container marketing py-4">
-        <div class="row my-2">
-            <div class="col-5 animation-element slide-left">
-                <div class="bg-darkblue slider-left">
-                    <div class="header">
-                        <h3 class="text-uppercase p-3">Athlon SL</h3>
-                    </div>
-                </div>
-            </div>
-            <div class="col-7">
-                <div class="sub-header">
-                    <h4 class="text-uppercase p-3 info text-right bg-darkblue">Carbon Rollator &ndash; extrem leicht</h4>
-                </div>
-            </div>
-        </div>
-        <div class="row featurette">
-            <div class="col-5 animation-element slide-left">
-                <img src="/ATHLON SL - Front_web.png" class="img-fluid mx-auto" />
-            </div>
-            <div class="col-7">
-                <h2 class="featurette-heading">Rollator Athlon SL</h2>
-                <p class="lead">Der superleichte Carbon-Rollator bietet Ihnen alles, was Ihr mobiler Alltag benötigt - Stabilität und Sicherheit beim Gehen inkl. zuverlässigen Bremsen mit bruchfesten Rädern.</p>
-                <div class="d-flex justify-content-between">
-                    <p class="lead text-red"><strong>Lieferumfang</strong></p>
-                    <p class="lead text-red"><strong>Technische Details:</strong></p>
-                </div>
-                <div class="d-flex justify-content-between">
-                    <ul>
-                        <li>Ergonomische Griffe</li>
-                        <li>Ankipphilfe</li>
-                        <li>Einkaufstasche</li>
-                        <li>Soft-Reifen</li>
-                        <li>Stockhalter</li>
-                    </ul>
-                    <ul>
-                        <li>Gewicht 5,0 - 5,2 kg</li>
-                        <li>Max. Nutzlast 150 kg</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <hr class="featurette-divider">
-    </div>
+    {# End Content Intro Mobilität #}
+    {# Start Content Rollator #}
+    {% include 'frontend/start/rollator.html.twig' %}
+    {# End Content Rollator #}
     <div class="parallax-window" data-parallax="scroll" data-image-src="/VD1_5607_web.jpg">
-        <div class="parallax-content">
-
-        </div>
+        <div class="parallax-content"></div>
     </div>
     <div class="container py-4">
         <p class="lead"><strong>Aktiv-Rollstühle</strong> können heute wahre Leichtgewichte sein! Von der Verwendung daheim bis hin zur Städtetour ist vieles möglich. Aber ob Falt- oder Starrahmen: Das Gewicht ist nur ein Qualitätskriterium, das ein Plus in Sachen Alltagsmobilität bedeutet. Dazu kommen Schmutzempfindlichkeit von Lagern und Lenkradachsen, Rollwiderstand und Wendigkeit. Aber auch ein optimaler Greifpunkt, die richtige Radgröße und die Einstellung des Schwerpunktes sind Themen, die man am besten mit dem Experten bespricht. Das alles finden Sie bei uns!</p>
-        </div>
+    </div>
     <div class="parallax-window" data-parallax="scroll" data-image-src="/17833-_MG_2141.jpg">
         <div class="parallax-content">
         </div>
     </div>
-    <div class="container py-4">
-        <p class="lead"><strong>Elektromobile</strong> oder <strong>E-Scooter</strong> sind elektrisch angetriebene Mobilitätshilfen für Senioren und Menschen mit Handicap, die beispielsweise selbst kurze Wegestrecken wie Einkäufe oder Arztbesuche nicht mehr ohne Hilfe bewältigen können. Dabei reicht die Palette vom wendigen Flitzer für Haus und Hof bis zum Modell mit Straßenzulassung. Was zu wem passt - bei der Entscheidung hilft beispielsweise unsere Experten-Beratung!</p>
-    </div>
+    {# Start Content Scooter #}
+    {% include 'frontend/start/scooter.html.twig' %}
+    {# End Content Scooter #}
     <div class="parallax-window" data-parallax="scroll" data-image-src="ORION PRO BE19.jpg">
         <div class="parallax-content">
         </div>

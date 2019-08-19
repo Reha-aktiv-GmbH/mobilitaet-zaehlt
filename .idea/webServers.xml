@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="19fe2aa7-a01b-4f9d-8574-f86155165de8" name="mobilität-zählt (1)" url="http://www.mobilität-zählt.de">
+        <fileTransfer host="www.reha-aktiv-chemnitz.de" port="21" rootFolder="/mobilitaet-zaehlt/mobilitaet-zaehlt">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" showHiddenFiles="true" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
