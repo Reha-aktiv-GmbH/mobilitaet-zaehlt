@@ -110,10 +110,9 @@
 }
 
 .box20:hover .more {
-    transform: scale(1.4);
     background: rgba(201,201,201,.8);
+    box-shadow: none;
     color:rgb(55,96,146);
-    border-radius: 15px;
 }
 
 @media only screen and (max-width:990px) {
