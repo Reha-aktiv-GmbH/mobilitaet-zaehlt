@@ -12,6 +12,7 @@ require('@fortawesome/fontawesome-free/js/all.js');
 require('../img/K+C_2019_Bewegt.jpg');
 require('../img/K+C_2019_Läuft.jpg');
 require('../img/K+C_2019_Miteinander.jpg');
+require('../img/Fotolia_187909637_M.jpg');
 // Need jQuery? Install it with "yarn add jquery", then uncomment to require it.
 const $ = require('jquery');
 
