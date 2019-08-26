@@ -16,6 +16,14 @@
       "css": [
         "/build/some_page.css"
       ]
+    },
+    "card-rotation": {
+      "js": [
+        "/build/runtime.js"
+      ],
+      "css": [
+        "/build/card-rotation.css"
+      ]
     }
   }
 }
