@@ -261,6 +261,7 @@ body {
 
 .featurette-divider {
     margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+    border-top-color: rgba(55,96,146,0.5);
 }
 
 /* Thin out the marketing headings */
@@ -387,4 +388,22 @@ time > .month {
     font-size: 28pt;
     font-weight: 700;
     line-height: 1;
+}
+div.siegel {
+    position: fixed;
+    z-index:1;
+    bottom:40px;
+    right:70px;
+    width: 175px;
+    min-height: 75px;
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.26);
+    -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.26);
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.26);
+}
+.carousel-indicators {
+    bottom:-.7rem;
+
+}
+.carousel-indicators li {
+    background-color: rgb(55,96,146);
 }
