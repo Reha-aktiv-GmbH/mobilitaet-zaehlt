@@ -1,7 +1,8 @@
 {
   "name": "mobilitaet-zaehlt",
   "version": "1.0.0",
-  "description": "",
+  "description": "website for consumer",
+  "repository": "1.0.0",
   "main": "index.js",
   "directories": {
     "test": "tests"
