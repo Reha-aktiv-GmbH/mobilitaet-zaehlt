@@ -394,8 +394,6 @@ div.siegel {
     z-index:1;
     bottom:40px;
     right:70px;
-    width: 175px;
-    max-width: auto !important;
     min-height: 75px;
     -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.26);
     -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.26);
