@@ -1,16 +1,20 @@
 var Encore = require('@symfony/webpack-encore');
-
+var compressionPlugin = require('compression-webpack-plugin');
 Encore
     .setOutputPath('public/build/')
-
     .setPublicPath('/build')
-
     .addEntry('app','./assets/js/app.js')
-    .addStyleEntry('hover-effect', './assets/css/hover_effect_image.css')
-    .addStyleEntry('card-rotation', './assets/css/rotating-card.css')
+    .addStyleEntry('global','./assets/css/global.scss')
     .enableSassLoader()
     .enableSingleRuntimeChunk()
-
+    .addPlugin(new compressionPlugin({
+        test: /\.(js|css)$/,
+        filename: '[path].gz[query]',
+        minRatio: 0.8,
+        algorithm: 'gzip',
+        deleteOriginalAssets: false
+    }))
+    .autoProvidejQuery()
     .cleanupOutputBeforeBuild()
     .addLoader({
         test: /\.(png|jpg)$/,
@@ -22,6 +26,5 @@ Encore
         }
     })
     .enableSourceMaps(!Encore.isProduction())
-    .enableVersioning(Encore.isProduction())
 ;
 module.exports = Encore.getWebpackConfig();

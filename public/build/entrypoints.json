@@ -2,27 +2,16 @@
   "entrypoints": {
     "app": {
       "js": [
-        "/build/runtime.b82e9a70.js",
-        "/build/app.d86e1d08.js"
-      ],
-      "css": [
-        "/build/app.3e73d4c5.css"
+        "/build/runtime.js",
+        "/build/app.js"
       ]
     },
-    "hover-effect": {
+    "global": {
       "js": [
-        "/build/runtime.b82e9a70.js"
+        "/build/runtime.js"
       ],
       "css": [
-        "/build/hover-effect.13da488a.css"
-      ]
-    },
-    "card-rotation": {
-      "js": [
-        "/build/runtime.b82e9a70.js"
-      ],
-      "css": [
-        "/build/card-rotation.47914117.css"
+        "/build/global.css"
       ]
     }
   }

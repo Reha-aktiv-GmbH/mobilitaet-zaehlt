@@ -10,7 +10,11 @@
 <div class="row featurette">
     <div class="col-5 animation-element slide-left">
         <div class="box20">
-            <img src="{{ asset('media/orion_web.webp') }}" class="img-fluid mx-auto" />
+            <picture>
+                <source srcset="{{ asset('media/orion_web.webp') }}" type="image/webp">
+                <source srcset="{{ asset('media/orion_web.jp2') }}" type="image/jp2">
+                <img src="{{ asset('media/orion_web.jpg') }}" class="img-fluid mx-auto" />
+            </picture>
             <div class="more">
                 <i class="fas fa-info-circle"></i>
             </div>
