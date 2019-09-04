@@ -7,14 +7,13 @@
         {% block stylesheets %}
             <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
             {{ encore_entry_link_tags('app') }}
-            {{ encore_entry_link_tags('some_page') }}
+            {{ encore_entry_link_tags('hover-effect') }}
             {{ encore_entry_link_tags('card-rotation') }}
         {% endblock %}
     </head>
     <body>
-
         <div class="siegel d-none d-md-flex">
-            <img src="{{ asset('TESTBILD_BdS2019_Siegel_reha-aktiv_Chemnitz_Sanitaetshaeuser_web.jpg') }}" class="img-fluid" />
+            <img src="{{ asset('media/testsiegel_web.webp') }}" class="img-fluid" width="175" />
         </div>
         {% block body %}{% endblock %}
         {% block javascripts %}

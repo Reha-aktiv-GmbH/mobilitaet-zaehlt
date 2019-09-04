@@ -9,10 +9,7 @@
 require('../css/app.css');
 require('@fortawesome/fontawesome-free/css/all.min.css');
 require('@fortawesome/fontawesome-free/js/all.js');
-require('../img/K+C_2019_Bewegt.jpg');
-require('../img/K+C_2019_Läuft.jpg');
-require('../img/K+C_2019_Miteinander.jpg');
-require('../img/Fotolia_187909637_M.jpg');
+require('jquery-parallax.js');
 // Need jQuery? Install it with "yarn add jquery", then uncomment to require it.
 const $ = require('jquery');
 

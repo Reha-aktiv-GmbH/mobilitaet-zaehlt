@@ -6,7 +6,7 @@ Encore
     .setPublicPath('/build')
 
     .addEntry('app','./assets/js/app.js')
-    .addStyleEntry('some_page', './assets/css/hover_effect_image.css')
+    .addStyleEntry('hover-effect', './assets/css/hover_effect_image.css')
     .addStyleEntry('card-rotation', './assets/css/rotating-card.css')
     .enableSassLoader()
     .enableSingleRuntimeChunk()
@@ -17,8 +17,8 @@ Encore
         loader: 'file-loader',
         options: {
             name: '/[name].[ext]',
-            publicPath: '/build',
-            outputPath: 'images'
+            publicPath: '/',
+            outputPath: 'media'
         }
     })
     .enableSourceMaps(!Encore.isProduction())

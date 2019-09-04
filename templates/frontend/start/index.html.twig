@@ -1,11 +1,7 @@
 {% extends 'base.html.twig' %}
-{% block javascripts %}
-{{ parent() }}
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax.js/1.5.0/parallax.min.js" crossorigin="anonymous"></script>
-{% endblock %}
 {% block body %}
     {%  include 'frontend/start/nav.html.twig' %}
-    <div class="parallax-window" data-parallax="scroll" data-image-src="{{ asset('build/images/Fotolia_187909637_M.jpg') }}">
+    <div class="parallax-window" data-parallax="scroll" data-image-src="{{ asset('media/senioren_background_web.webp') }}">
         <div class="parallax-content"></div>
     </div>
     {# Start Content Intro Mobilität #}
@@ -24,20 +20,20 @@
     {# Start Content Rollator #}
     {% include 'frontend/start/rollator.html.twig' %}
     {# End Content Rollator #}
-    <div class="parallax-window" data-parallax="scroll" data-image-src="/VD1_5607_web.jpg">
+    <div class="parallax-window" data-parallax="scroll" data-image-src="{{ asset('media/omaeinkauf_background_web.webp') }}">
         <div class="parallax-content"></div>
     </div>
     {# Start Content Rollstuhl #}
     {% include 'frontend/start/rollstuhl.html.twig' %}
     {# End Content Rollstuhl #}
-    <div class="parallax-window" data-parallax="scroll" data-image-src="/17833-_MG_2141.jpg">
+    <div class="parallax-window" data-parallax="scroll" data-image-src="{{ asset('media/rollikinder_background_web.webp') }}">
         <div class="parallax-content">
         </div>
     </div>
     {# Start Content Scooter #}
     {% include 'frontend/start/scooter.html.twig' %}
     {# End Content Scooter #}
-    <div class="parallax-window" data-parallax="scroll" data-image-src="ORION PRO BE19.jpg">
+    <div class="parallax-window" data-parallax="scroll" data-image-src="{{ asset('media/opaenkel_background_web.webp') }}">
         <div class="parallax-content">
         </div>
     </div>

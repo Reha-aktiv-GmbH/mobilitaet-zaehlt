@@ -3,18 +3,18 @@
     "app": {
       "js": [
         "/build/runtime.b82e9a70.js",
-        "/build/app.414a909a.js"
+        "/build/app.d86e1d08.js"
       ],
       "css": [
         "/build/app.3e73d4c5.css"
       ]
     },
-    "some_page": {
+    "hover-effect": {
       "js": [
         "/build/runtime.b82e9a70.js"
       ],
       "css": [
-        "/build/some_page.13da488a.css"
+        "/build/hover-effect.13da488a.css"
       ]
     },
     "card-rotation": {

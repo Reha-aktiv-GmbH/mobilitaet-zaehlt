@@ -1,9 +1,9 @@
 {
   "build/app.css": "/build/app.3e73d4c5.css",
-  "build/app.js": "/build/app.414a909a.js",
+  "build/app.js": "/build/app.d86e1d08.js",
   "build/card-rotation.css": "/build/card-rotation.47914117.css",
+  "build/hover-effect.css": "/build/hover-effect.13da488a.css",
   "build/runtime.js": "/build/runtime.b82e9a70.js",
-  "build/some_page.css": "/build/some_page.13da488a.css",
   "build/fonts/fa-brands-400.eot": "/build/fonts/fa-brands-400.14c590d1.eot",
   "build/fonts/fa-brands-400.woff2": "/build/fonts/fa-brands-400.3e1b2a65.woff2",
   "build/fonts/fa-brands-400.ttf": "/build/fonts/fa-brands-400.5e8aa9ea.ttf",
@@ -16,10 +16,6 @@
   "build/fonts/fa-solid-900.eot": "/build/fonts/fa-solid-900.42e1fbd2.eot",
   "build/fonts/fa-solid-900.ttf": "/build/fonts/fa-solid-900.896e20e2.ttf",
   "build/fonts/fa-solid-900.woff2": "/build/fonts/fa-solid-900.d6d8d5da.woff2",
-  "build/images/Fotolia_187909637_M.jpg": "/build/images/Fotolia_187909637_M.jpg",
-  "build/images/K+C_2019_Bewegt.jpg": "/build/images/K+C_2019_Bewegt.jpg",
-  "build/images/K+C_2019_Läuft.jpg": "/build/images/K+C_2019_Läuft.jpg",
-  "build/images/K+C_2019_Miteinander.jpg": "/build/images/K+C_2019_Miteinander.jpg",
   "build/images/fa-brands-400.svg": "/build/images/fa-brands-400.bfa9c38b.svg",
   "build/images/fa-regular-400.svg": "/build/images/fa-regular-400.95f13e0b.svg",
   "build/images/fa-solid-900.svg": "/build/images/fa-solid-900.6ed5e3bc.svg"
