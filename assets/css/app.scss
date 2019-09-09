@@ -69,7 +69,8 @@ body {
   transform: skew(40deg);
 }
 #teaser-right img {
-  padding:0 1.5rem 0 2.2rem;
+  /*padding:0 1.5rem 0 2.2rem;*/
+  padding: .5rem 1.5rem 0 5.1rem;
 }
 
 #teaser-right::after {
@@ -80,7 +81,46 @@ body {
 .navbar-nav {
   margin-left:9rem;
 }
-
+@media only screen and (max-width: 575.98px){
+  #teaser-right {
+    background:transparent;
+    max-width: 290px;
+    right: 0;
+    transform:none;
+    &::after {
+      transform: none;
+    }
+    img {
+      transform:none;
+      padding: .5rem 1.5rem 0 5.1rem;
+    }
+  }
+}
+@media only screen and (min-width: 576px){
+  #teaser-right {
+    img {
+      padding:0 1.5rem 0 2.2rem;
+    }
+  }
+}
+@media only screen
+and (device-width : 414px)
+and (device-height : 896px)
+and (-webkit-device-pixel-ratio : 2) {
+  #teaser-right {
+    background:transparent;
+    max-width: 290px;
+    right: 0;
+    transform:none;
+    &::after {
+      transform: none;
+    }
+    img {
+      transform:none;
+      padding:0 1.5rem 0 2.2rem;
+    }
+  }
+}
 
 .bx-white::after {
   background: rgba(255,255,255,1) !important;
@@ -121,8 +161,11 @@ body {
 
 .text-red {
   color:rgb(210,17,48);
-}
 
+}
+.btn-link-red {
+  color:rgb(210,17,48);
+}
 /* Header Parallax Element Style*/
 .paral {
   min-height: 720px;
@@ -343,6 +386,12 @@ div.slider-left .header h3 {
   margin-left:6rem;
 }
 
+@media only screen and (max-width:479px) {
+  div.slider-left .header h3 {
+    font-size: 1.25rem;
+  }
+}
+
 h4.info {
   opacity: 0;
   -webkit-transition: opacity 1s ease-in-out;
@@ -405,4 +454,22 @@ div.siegel {
 }
 .carousel-indicators li {
   background-color: rgb(55,96,146);
+}
+a {
+  color:rgb(210,17,48);
+}
+.nav-link.active {
+  color: rgb(2,81,150) !important;
+}
+@include media-breakpoint-down(sm) {
+  .nav-link.active {
+    span {
+      display:inline-block;
+    }
+  }
+  .nav-link {
+    span {
+      display:none;
+    }
+  }
 }

@@ -4,13 +4,16 @@
     <span class="bx bx-lightblue"></span>
     <span class="bx bx-darkblue"></span>
 </div>
-<div class="" id="teaser-right">
-    <img src="{{ asset('media/rac.gif') }}" alt="Reha-aktiv GmbH" class="img-fluid">
+<div id="teaser-right">
+    <picture>
+        <source media="(max-width: 575.98px)" srcset="{{ asset('media/rac_weiss.gif') }}">
+        <img src="{{ asset('media/rac.gif') }}" alt="Reha-aktiv GmbH" class="img-fluid">
+    </picture>
 </div>
 <nav class="navbar navbar-light bg-blue py-3">
 
     <span class="navbar-text text-white lead">
-        Mobilität – weil dabei sein wichtig ist!
+        Mobilit&auml;t z&auml;hlt <span class="d-none d-md-inline-block">– weil dabei sein wichtig ist!</span>
       </span>
 </nav>
 {% endblock %}

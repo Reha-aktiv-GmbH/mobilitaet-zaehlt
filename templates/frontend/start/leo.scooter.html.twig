@@ -8,17 +8,20 @@
     </div>
 </div>
 <div class="row featurette">
-    <div class="col-5 animation-element slide-left">
+    <div class="col-12 col-md-5 animation-element slide-left">
         <div class="box20">
             <picture>
-                <source srcset="{{ asset('media/leo_web.webp') }}" type="image/webp">
-                <source srcset="{{ asset('media/leo_web.jp2') }}" type="image/jp2">
+                <source srcset="{{ asset('media/leo_web_small.webp') }}" media="(max-width: 575.98px)" type="image/webp">
+                <source srcset="{{ asset('media/leo_web_small.jp2') }}" media="(max-width: 575.98px)" type="image/jp2">
+                <source srcset="{{ asset('media/leo_web_small.jpg') }}" media="(max-width: 575.98px)" type="image/jpg">
+                <source srcset="{{ asset('media/leo_web.webp') }}" media="(min-width: 576px)" type="image/webp">
+                <source srcset="{{ asset('media/leo_web.jp2') }}" media="(min-width: 576px)" type="image/jp2">
                 <img src="{{ asset('media/leo_web.jpg') }}" class="img-fluid mx-auto" />
             </picture>
-            <div class="more">
+            <div class="d-none d-md-inline-block more">
                 <i class="fas fa-info-circle"></i>
             </div>
-            <div class="box-content">
+            <div class="d-none d-md-inline-block box-content">
                 <h3 class="title">ELEKTROMOBIL LEO<sup>&reg;</sup></h3>
                 <span class="post">Technische Daten:</span>
                 <ul>
@@ -36,16 +39,20 @@
             </div>
         </div>
     </div>
-    <div class="col-7">
+    <div class="col-12 col-md-7">
         <h2 class="featurette-heading">ELEKTROMOBIL LEO<sup>&reg;</sup></h2>
         <p class="lead">Der Invacare® Leo® erfüllt mit ÖPNV-Sonderausstattung
             sämtliche Anforderungen für die Mitnahme in öffentlichen
             Verkehrsmitteln.</p>
-        <div class="d-flex justify-content-start">
+        <p class="d-md-none">
+            <button class="btn btn-link-red" data-toggle="collapse" data-target="#leo-content">Ausstattung <i class="fas fa-caret-down"> </i> </button>
+            <button class="btn btn-link-red" data-toggle="collapse" data-target="#leo-technical">Technische Details <i class="fas fa-caret-down"> </i> </button>
+        </p>
+        <div class="d-none d-md-flex justify-content-start">
             <p class="lead text-red"><strong>Serienmäßige Ausstattung:</strong></p>
         </div>
-        <div class="d-flex justify-content-start">
-            <ul>
+        <div class="d-md-inline-block justify-content-start">
+            <ul class="collapse" id="leo-content">
                 <li>Doppelscheinwerfer</li>
                 <li>Brems- / Blinklicht</li>
                 <li>Rückspiegel links</li>
@@ -54,7 +61,18 @@
                 <li>Batterieladegerät</li>
                 <li>Einkaufskorb vorn</li>
             </ul>
-
+            <ul class="collapse d-md-inline-block" id="leo-technical">
+                <li>Max. Nutzlast 136 kg</li>
+                <li>Reichweite 38 km</li>
+                <li>Geschwindigkeit 6 km/h</li>
+                <li>Gewicht 83 kg</li>
+                <li>Sitzbreite 47 cm</li>
+                <li>Sitztiefe 41 cm</li>
+                <li>Sitzhöhe 46-56 cm</li>
+                <li>Rückenlehne 47,5 cm</li>
+                <li>Gesamtbreite 66 cm</li>
+                <li>Motorleistung 240 W</li>
+            </ul>
         </div>
     </div>
 </div>

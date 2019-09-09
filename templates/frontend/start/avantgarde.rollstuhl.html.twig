@@ -8,17 +8,20 @@
     </div>
 </div>
 <div class="row featurette">
-    <div class="col-5 animation-element slide-left">
+    <div class="col-12 col-md-5 animation-element slide-left">
         <div class="box20">
             <picture>
-                <source srcset="{{ asset('media/avantgarde_dv_web.webp') }}" type="image/webp">
-                <source srcset="{{ asset('media/avantgarde_dv_web.jp2') }}" type="image/jp2">
+                <source srcset="{{ asset('media/avantgarde_dv_web_small.webp') }}" media="(max-width: 575.98px)" type="image/webp">
+                <source srcset="{{ asset('media/avantgarde_dv_web_small.jp2') }}" media="(max-width: 575.98px)" type="image/jp2">
+                <source srcset="{{ asset('media/avantgarde_dv_web_small.jpg') }}" media="(max-width: 575.98px)" type="image/jpg">
+                <source srcset="{{ asset('media/avantgarde_dv_web.webp') }}" media="(min-width: 576px)" type="image/webp">
+                <source srcset="{{ asset('media/avantgarde_dv_web.jp2') }}" media="(min-width: 576px)" type="image/jp2">
                 <img src="{{ asset('media/avantgarde_dv_web.jpg') }}" class="img-fluid mx-auto" />
             </picture>
-            <div class="more">
+            <div class="d-none d-md-inline-block more">
                 <i class="fas fa-info-circle"></i>
             </div>
-            <div class="box-content">
+            <div class="d-none d-md-inline-block box-content">
                 <h3 class="title">Ottobock Avantgarde DV</h3>
                 <span class="post">Technische Daten:</span>
                 <ul>
@@ -39,13 +42,14 @@
             </div>
         </div>
     </div>
-    <div class="col-7">
+    <div class="col-12 col-md-7">
         <h2 class="featurette-heading">Ottobock Avantgarde DV</h2>
         <p class="lead">Der Avantgarde DV steht für Leichtigkeit – ohne Kompromisse! Denn auf bewährte Vorteile der Avantgard-Serie von Otto Bock, wie etwa abnehm- und wegschwenkbare Beinstützen, muss man nicht verzichten.</p>
         <nav>
             <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                <a class="nav-item nav-link active" id="nav-general-tab" data-toggle="tab" href="#nav-general" role="tab" aria-controls="nav-general" aria-selected="true">Hauptmerkmale</a>
-                <a class="nav-item nav-link" id="nav-options-tab" data-toggle="tab" href="#nav-options" role="tab" aria-controls="nav-options" aria-selected="false">Optionen</a>
+                <a class="nav-item nav-link active" id="nav-general-tab" data-toggle="tab" href="#nav-general" role="tab" aria-controls="nav-general" aria-selected="true" title="Hauptmerkmale"><i class="fas fa-home"></i> <span class="">Hauptmerkmale</span> </a>
+                <a class="nav-item nav-link" id="nav-options-tab" data-toggle="tab" href="#nav-options" role="tab" aria-controls="nav-options" aria-selected="false" title="Optionen"><i class="fab fa-accessible-icon"></i> <span class="">Optionen</span> </a>
+                <a class="nav-item nav-link d-md-none" id="nav-technical-tab" data-toggle="tab" href="#nav-technical" role="tab" aria-controls="nav-technical" aria-selected="false"><i class="fas fa-cog"></i> <span class="">Technische Daten</span> </a>
             </div>
         </nav>
         <div class="tab-content" id="nav-tabContent">
@@ -74,6 +78,23 @@
                     <li>Verschiedene Lenkräder / Lenkradgabeln</li>
                     <li>Kippschutz</li>
                     <li>Ankipphilfe</li>
+                </ul>
+            </div>
+            <div class="tab-pane fade d-md-none" id="nav-technical" role="tabpanel" aria-labelledby="nav-technical-tab">
+                <ul class="py-4">
+                    <li>HMV-Nummer 18.50.03.0224</li>
+                    <li>Sitzbreite 320 - 500 mm</li>
+                    <li>Sitztiefe 360 - 520 mm</li>
+                    <li>Sitzhöhe vorn 390 - 550 mm</li>
+                    <li>Sitzhöhe hinten 360 - 510 mm</li>
+                    <li>Rückenhöhe 250 - 500 mm</li>
+                    <li>Unterschenkellänge 	160 - 510 mm</li>
+                    <li>Gesamtlänge 720 - 1040 mm</li>
+                    <li>Gesamtbreite 490 - 725 mm</li>
+                    <li>Gesamthöhe 	580 - 1100 mm</li>
+                    <li>Faltmaß ab 260 mm</li>
+                    <li>Max. Zuladung 100 / 140 kg</li>
+                    <li>Gewicht ab ca. 9 kg</li>
                 </ul>
             </div>
         </div>

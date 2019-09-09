@@ -7,18 +7,22 @@
         </div>
     </div>
 </div>
-<div class="row featurette my-2">
-    <div class="col-5 animation-element slide-left">
-        <div class="box20 py-4">
+<div class="row featurette">
+    <div class="col-12 col-md-5 animation-element slide-left">
+        <div class="box20">
             <picture>
-                <source srcset="{{ asset('media/zenit_web.webp') }}" type="image/webp">
-                <source srcset="{{ asset('media/zenit_web.jp2') }}" type="image/jp2">
+                <source srcset="{{ asset('media/zenit_web_small.webp') }}" media="(max-width: 575.98px)" type="image/webp">
+                <source srcset="{{ asset('media/zenit_web_small.jp2') }}" media="(max-width: 575.98px)" type="image/jp2">
+                <source srcset="{{ asset('media/zenit_web_small.jpg') }}" media="(max-width: 575.98px)" type="image/jpg">
+                <source srcset="{{ asset('media/zenit_web.webp') }}" media="(min-width: 576px)" type="image/webp">
+                <source srcset="{{ asset('media/zenit_web.jp2') }}" media="(min-width: 576px)" type="image/jp2">
                 <img src="{{ asset('media/zenit_web.jpg') }}" class="img-fluid mx-auto py-4" />
             </picture>
-            <div class="more">
+            <div class="d-none d-md-inline-block more">
                 <i class="fas fa-info-circle"></i>
             </div>
-            <div class="box-content">
+            <div class="d-none d-md-inline-block box-content">
+                <h3 class="title">Ottobock Zenit</h3>
                 <span class="post">Technische Daten:</span>
                 <ul>
                     <li>Sitzbreite 320 – 460 mm</li>
@@ -37,15 +41,16 @@
             </div>
         </div>
     </div>
-    <div class="col-7">
+    <div class="col-12 col-md-7">
         <h2 class="featurette-heading">Ottobock Zenit</h2>
         <p class="lead">Zenit - ein Faltrollstuhl für (fast) alle Tage!  Dank des patentierten Easy-Go Faltsystems er sich einem sehr geringen Krafteinsatz auseinanderfalten.
             Zusammen mit dem abklappbaren Rücken ist das eine unschlagbare Kombi, wenn es um ein optimales Packmaß geht.
             Dabei beeindruckt der Zenit mit aufgeräumter, schnörkelloser Optik, absoluter Stabilität und dem soliden Fahrverhalten einen Starrrahmen-Rollstuhls.</p>
         <nav>
             <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                <a class="nav-item nav-link active" id="nav-general-zenit-tab" data-toggle="tab" href="#nav-general-zenit" role="tab" aria-controls="nav-general-zenit" aria-selected="true">Hauptmerkmale</a>
-                <a class="nav-item nav-link" id="nav-options-zenit-tab" data-toggle="tab" href="#nav-options-zenit" role="tab" aria-controls="nav-options-zenit" aria-selected="false">Optionen</a>
+                <a class="nav-item nav-link active" id="nav-general-tab" data-toggle="tab" href="#nav-general-zenit" role="tab" aria-controls="nav-general-zenit" aria-selected="true" title="Hauptmerkmale"><i class="fas fa-home"></i> <span class="">Hauptmerkmale</span> </a>
+                <a class="nav-item nav-link" id="nav-options-tab" data-toggle="tab" href="#nav-options-zenit" role="tab" aria-controls="nav-options-zenit" aria-selected="false" title="Optionen"><i class="fab fa-accessible-icon"></i> <span class="">Optionen</span> </a>
+                <a class="nav-item nav-link d-md-none" id="nav-technical-tab" data-toggle="tab" href="#nav-technical-zenit" role="tab" aria-controls="nav-technical-zenit" aria-selected="false"><i class="fas fa-cog"></i> <span class="">Technische Daten</span> </a>
             </div>
         </nav>
         <div class="tab-content" id="nav-tabContent">
@@ -70,6 +75,22 @@
                     <li>Verschiedene Lenkräder / Lenkradgabeln</li>
                     <li>Kippschutz</li>
                     <li>Ankipphilfe</li>
+                </ul>
+            </div>
+            <div class="tab-pane fade d-md-none" id="nav-technical-zenit" role="tabpanel" aria-labelledby="nav-technical-zenit-tab">
+                <ul class="py-4">
+                    <li>Sitzbreite 320 – 460 mm</li>
+                    <li>Sitztiefe 360 – 500 mm</li>
+                    <li>Sitzhöhe vorn 380 – 540 mm</li>
+                    <li>Sitzhöhe hinten 370 – 500 mm</li>
+                    <li>Rückenhöhe 250 – 500 mm</li>
+                    <li>Unterschenkellänge 280 – 510 mm</li>
+                    <li>Gesamtlänge 720 – 1040 mm</li>
+                    <li>Gesamtbreite 490 – 725 mm</li>
+                    <li>Gesamthöhe 720 – 1040 mm</li>
+                    <li>Max. Zuladung 120 kg</li>
+                    <li>Gewicht ab ca. 8,9 kg</li>
+                    <li>Vorderrahmenwinkel 75° / 85°</li>
                 </ul>
             </div>
         </div>

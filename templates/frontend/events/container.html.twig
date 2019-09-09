@@ -1,14 +1,22 @@
 
 <div id="carouselExampleControls" class="carousel slide pt-4" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#carouselExampleControls" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleControls" data-slide-to="1"></li>
+    </ol>
     <div class="carousel-inner">
         <div class="carousel-item active">
             <div class="row">
-                <div class="col-md-4 col-sm-6">
+                <div class="col-12 col-md-4 col-sm-6">
                     <div class="rotating-card card-container">
                         <div class="card">
                             <div class="front">
                                 <div class="cover">
-                                    <img src="{{ asset('media/banner_bewegt_web.webp') }}" />
+                                    <picture>
+                                        <source srcset="{{ asset('media/banner_bewegt_web.webp') }}" type="image/webp">
+                                        <source srcset="{{ asset('media/banner_bewegt_web.jp2') }}" type="image/jp2">
+                                        <img src="{{ asset('media/banner_bewegt_web.jpg') }}" />
+                                    </picture>
                                 </div>
                                 <time datetime="2019-08-29">
                                     <span class="day">29</span>
@@ -56,12 +64,16 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-6">
+                <div class="col-12 col-md-4 col-sm-6">
                     <div class="rotating-card card-container">
                         <div class="card">
                             <div class="front">
                                 <div class="cover">
-                                    <img src="{{ asset('media/banner_laeuft_web.webp') }}" />
+                                    <picture>
+                                        <source srcset="{{ asset('media/banner_laeuft_web.webp') }}" type="image/webp">
+                                        <source srcset="{{ asset('media/banner_laeuft_web.jp2') }}" type="image/jp2">
+                                        <img src="{{ asset('media/banner_laeuft_web.jpg') }}" />
+                                    </picture>
                                 </div>
                                 <time datetime="2019-09-11">
                                     <span class="day">11</span>
@@ -110,12 +122,16 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-6">
+                <div class="col-12 col-md-4 col-sm-6">
                     <div class="rotating-card card-container">
                         <div class="card">
                             <div class="front">
                                 <div class="cover">
-                                    <img src="{{ asset('media/banner_miteinander_web.webp') }}" />
+                                    <picture>
+                                        <source srcset="{{ asset('media/banner_miteinander_web.webp') }}" type="image/webp">
+                                        <source srcset="{{ asset('media/banner_miteinander_web.jp2') }}" type="image/jp2">
+                                        <img src="{{ asset('media/banner_miteinander_web.jpg') }}" />
+                                    </picture>
                                 </div>
                                 <time datetime="2019-09-25">
                                     <span class="day">25</span>
@@ -168,12 +184,16 @@
         </div>
         <div class="carousel-item">
             <div class="row">
-            <div class="col-md-4 offset-md-2 col-sm-6">
+            <div class="col-12 col-md-4 offset-md-2 col-sm-6">
                 <div class="rotating-card card-container">
                     <div class="card">
                         <div class="front">
                             <div class="cover">
-                                <img src="{{ asset('media/banner_bewegt_web.webp') }}" />
+                                <picture>
+                                    <source srcset="{{ asset('media/banner_bewegt_web.webp') }}" type="image/webp">
+                                    <source srcset="{{ asset('media/banner_bewegt_web.jp2') }}" type="image/jp2">
+                                    <img src="{{ asset('media/banner_bewegt_web.jpg') }}" />
+                                </picture>
                             </div>
                             <time datetime="2019-09-27">
                                 <span class="day">27</span>
@@ -222,12 +242,19 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 col-sm-6">
+            <div class="col-12 col-md-4 col-sm-6">
                 <div class="rotating-card card-container">
                     <div class="card">
                         <div class="front">
                             <div class="cover">
-                                <img src="{{ asset('media/banner_laeuft_web.webp') }}" />
+                                <picture>
+                                    <source srcset="{{ asset('media/banner_laeuft_web_small.webp') }}" media="(max-width: 575.98px)" type="image/webp">
+                                    <source srcset="{{ asset('media/banner_laeuft_web.webp') }}" media="(min-width: 576px)" type="image/webp">
+                                    <source srcset="{{ asset('media/banner_laeuft_web_small.jp2') }}" media="(max-width: 575.98px)" type="image/jp2">
+                                    <source srcset="{{ asset('media/banner_laeuft_web.jp2') }}" media="(min-width: 576px)" type="image/jp2">
+                                    <source srcset="{{ asset('media/banner_laeuft_web_small.jpg') }}" media="(max-width: 575.98px)" type="image/jpg">
+                                    <img src="{{ asset('media/banner_laeuft_web.jpg') }}" />
+                                </picture>
                             </div>
                             <time datetime="2019-10-04">
                                 <span class="day">04</span>
