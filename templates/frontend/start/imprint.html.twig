@@ -1,0 +1,59 @@
+{% extends 'frontend/start/index.html.twig' %}
+
+{% block body %}
+    {%  include 'frontend/start/nav.html.twig' %}
+    <div class="container marketing py-4">
+        <h2 class="display-4">Impressum</h2>
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <p class=" text-left">
+                    Reha-aktiv GmbH<br/>
+                    Goethestra&szlig;e 5-7<br/>
+                    09119 Chemnitz<br/><br/>
+
+                    Tel.: (0371)3691012<br/>
+                    Fax: (0371)3691010<br/><br/>
+
+                    E-Mail: info@reha-aktiv-chemnitz.de<br/><br/>
+
+                    Gesch&auml;ftsf&uuml;hrer:<br/>
+                    Gerd Klinksiek, René J&auml;schke<br/><br/>
+
+                    Amtsgericht Chemnitz<br/>
+                    HRB 28067<br/>
+                    IK-Nr.: 331 400 379<br/>
+                    USt.-IdNr.: DE 289955070<br/>
+                    Steuer-Nr.: 215/117/04720
+                </p>
+
+            </div>
+            <div class="col-12 col-md-6">
+                <h5 class="text-left">Urheberrecht</h5>
+                <p class=" text-left">
+                    Auf unserer Internetseite pr&auml;sentierte Bilder von Fotolia unterliegen dem Urheberrecht von Fotolia.
+                    <br/>
+                    Produktbilder und Logos der Hersteller, Partner, Vereine, Netzwerke und weiteren Institutionen unterliegen dem Urheberrecht der jeweiligen Institution.
+                    <br/>
+                    Eigene Bilder und Piktogramme unterliegen dem Urheberrecht der Firma Reha-Aktiv GmbH.
+                    <br/>
+                    Eine Vervielf&auml;ltigung und Kopie oben genannter Abbildungen und Fotos sind untersagt oder bed&uuml;rfen der Schriftform.
+                    <br/>
+                    Verantwortlich gem&auml;&szlig; § 55 RStV:<br/>
+                    René J&auml;schke<br/>
+                    Goethestra&szlig;e 5-7<br/>
+                    09119 Chemnitz<br/><br/>
+
+                    Die Europ&auml;ische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit, die Sie <a href="https://ec.europa.eu/consumers/odr/" target="_blank" rel="nofollow">hier</a> finden . Verbraucher haben die M&ouml;glichkeit, diese Plattform f&uuml;r die Beilegung ihrer Streitigkeiten zu nutzen.
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- Footer Section -->
+    <footer class="wn-footer">
+        <ul class="list-unstyled d-flex justify-content-center">
+            <li class="p-2"><a href="{{ path('home') }}">Start</a></li>
+            <li class="p-2"><a href="{{ path('imprint') }}">Impressum</a></li>
+            <li class="p-2"><a href="{{ path('policy') }}">Datenschutz</a></li>
+        </ul>
+    </footer>
+{% endblock %}

@@ -43,6 +43,10 @@
     </div>
     <!-- Footer Section -->
     <footer class="wn-footer">
-        <p>Reha-aktiv GmbH</p>
+        <ul class="list-unstyled d-flex justify-content-center">
+            <li class="p-2"><a href="{{ path('home') }}">Start</a></li>
+            <li class="p-2"><a href="{{ path('imprint') }}">Impressum</a></li>
+            <li class="p-2"><a href="{{ path('policy') }}">Datenschutz</a></li>
+        </ul>
     </footer>
 {% endblock %}
