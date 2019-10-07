@@ -9,17 +9,7 @@
         {% include 'frontend/start/intro.mobilität.html.twig' %}
     </div>
     {# End Content Intro Mobilität #}
-    {# Start Event Container #}
-
-    <div class="container marketing">
-        <hr class="featurette-divider">
-        {% include 'frontend/events/container.html.twig' %}
-        <hr class="featurette-divider">
-    </div>
     {# End Event Container #}
-    <div class="parallax-window" data-parallax="scroll" data-image-src="{{ asset('media/omaeinkauf_background_web.jpg') }}">
-        <div class="parallax-content"></div>
-    </div>
     {# Start Content Rollator #}
     {% include 'frontend/start/rollator.html.twig' %}
     {# End Content Rollator #}
@@ -40,6 +30,6 @@
 
     <!-- Footer Section -->
     <footer class="wn-footer">
-        <p>Reha-aktiv GmbH</p>
+        <p><a href="https://www.reha-aktiv-chemnitz.de" title="Reha-aktiv GmbH">Reha-aktiv GmbH</a> &ndash; <a href="{{ path('imprint') }}" title="Impressum">Imrepssum</a></p>
     </footer>
 {% endblock %}

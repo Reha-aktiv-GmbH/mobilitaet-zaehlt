@@ -16,4 +16,12 @@ class StartController extends AbstractController
     {
         return $this->render('frontend/start/index.html.twig');
     }
+
+    /**
+     * @Route("/impressum",name="imprint",methods={"GET"})
+     */
+    public function imprint()
+    {
+        return $this->render('frontend/imprint.html.twig');
+    }
 }

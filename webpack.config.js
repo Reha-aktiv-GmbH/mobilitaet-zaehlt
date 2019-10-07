@@ -15,16 +15,9 @@ Encore
         deleteOriginalAssets: false
     }))
     .autoProvidejQuery()
+
     .cleanupOutputBeforeBuild()
-    .addLoader({
-        test: /\.(png|jpg)$/,
-        loader: 'file-loader',
-        options: {
-            name: '/[name].[ext]',
-            publicPath: '/',
-            outputPath: 'media'
-        }
-    })
+
     .enableSourceMaps(!Encore.isProduction())
 ;
 module.exports = Encore.getWebpackConfig();
