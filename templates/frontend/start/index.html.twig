@@ -4,32 +4,32 @@
     <div class="parallax-window" data-parallax="scroll" data-image-src="{{ asset('media/senioren_background_web.jpg') }}">
         <div class="parallax-content"></div>
     </div>
-    {# Start Content Intro Mobilität #}
+    {% block body_intro %}
     <div class="container marketing py-4">
-        {% include 'frontend/start/intro.mobilität.html.twig' %}
+        {% include 'frontend/start/intro.mobilitaet.html.twig' %}
     </div>
-    {# End Content Intro Mobilität #}
-    {# End Event Container #}
-    {# Start Content Rollator #}
+    {% endblock %}
+    {% block body_events %}{% endblock %}
+    {% block body_content_top %}
+        {% include 'frontend/static/advice.html.twig' %}
+    {% endblock %}
+    {% block body_content_main %}
     {% include 'frontend/start/rollator.html.twig' %}
-    {# End Content Rollator #}
     <div class="parallax-window" data-parallax="scroll" data-image-src="{{ asset('media/rollikinder_background_web.jpg') }}">
         <div class="parallax-content">
         </div>
     </div>
-    {# Start Content Rollstuhl #}
     {% include 'frontend/start/rollstuhl.html.twig' %}
-    {# End Content Rollstuhl #}
     <div class="parallax-window" data-parallax="scroll" data-image-src="{{ asset('media/opaenkel_background_web.jpg') }}">
         <div class="parallax-content">
         </div>
     </div>
-    {# Start Content Scooter #}
     {% include 'frontend/start/scooter.html.twig' %}
-    {# End Content Scooter #}
-
+    {% endblock %}
+    {% block body_footer %}
     <!-- Footer Section -->
     <footer class="wn-footer">
-        <p><a href="https://www.reha-aktiv-chemnitz.de" title="Reha-aktiv GmbH">Reha-aktiv GmbH</a> &ndash; <a href="{{ path('imprint') }}" title="Impressum">Imrepssum</a></p>
+        <p><a href="https://www.reha-aktiv-chemnitz.de" title="Reha-aktiv GmbH">Reha-aktiv GmbH</a> &ndash; <a href="{{ path('imprint') }}" title="Impressum">Impressum</a></p>
     </footer>
+    {% endblock %}
 {% endblock %}

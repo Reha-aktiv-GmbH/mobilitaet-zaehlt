@@ -1,0 +1,68 @@
+{% extends 'frontend/start/index.html.twig' %}
+{% block body_intro %}{% endblock %}
+{% block body_content_top %}{% endblock %}
+{% block body_content_main %}
+<div class="container">
+    <article class="my-4">
+        <h1 class="display-4">Was beim E-Mobil-Kauf zu beachten ist</h1>
+        <section>
+        <p class="lead text-justify">
+            Elektromobile - oder &quot;neudeutsch E-Scooter&quot; - sind streng genommen elektrisch angetriebene Mobilit&auml;tshilfen f&uuml;r Senioren und Menschen, die beispielsweise selbst kurze Wegestrecken wie Eink&auml;ufe oder Arztbesuche nicht mehr ohne Hilfe bew&auml;ltigen k&ouml;nnen. Dabei reicht die Palette vom wendigen Flitzer f&uuml;r Haus und Hof bis zum Modell mit Stra&szlig;enzulassung. Was zu wem passt - bei der Entscheidung hilft beispielsweise unsere Kaufberatung!
+        </p>
+            <div class="row border-top py-4">
+                <div class="col-12 order-md-last col-md-4 pr-0">
+                    <picture>
+                        <source srcset="{{ asset('media/comet_web.webp') }}" title="image/webp">
+                        <source srcset="{{ asset('media/comet_web.jp2') }}" title="image/jp2">
+                        <img src="{{ asset('media/comet_web.jpg') }}" class="img-fluid img-thumbnail" />
+                    </picture>
+                </div>
+                <div class="col-12 order-md-first col-md-8 pl-0 pr-0">
+                    <p class="lead text-justify">Standard-Ausf&uuml;hrungen sind Elektromobile mit einer H&ouml;chstgeschwindigkeit von 15 km/h – der Tipp f&uuml;r alle, die auch mal l&auml;nger in Innenst&auml;dten, Parks oder Ausfl&uuml;gen unterwegs sein wollen. &quot;Dank st&auml;rkerer Batterien sind mit Standardmodellen Reichweiten bis zu 70 Kilometer machbar&quot;, erkl&auml;rt Sandy Zscheckel von Reha-aktiv in Zwickau. Stra&szlig;entauglichen Elektromobile mit 25 km/h sind dagegen richtige Kraftpakete, f&uuml;r die eine Betriebserlaubnis, ein Nummernschild sowie ein F&uuml;hrerschein der Klasse AM oder h&ouml;her vorliegen muss. WICHTIG: Eine Versicherung ist hier genauso Pflicht wie bei E-Scootern bis 15 km/h! Sandy Zscheckel: &quot;F&uuml;r geringe Reichweiten, wie etwa f&uuml;r die Nutzung daheim und im Garten, gibt es zudem schmale und wendige Kompaktmodelle mit deutlich geringeren Reichweiten und Geschwindigkeiten bis 6 km/h.&quot; Eine Versicherung f&uuml;r diese Fahrzeuge ist nicht notwendig.  F&uuml;r welche Art E-Scooter Sie sich entscheiden, h&auml;ngt demnach ganz allein von Ihren Bed&uuml;rfnissen ab, r&auml;t die Expertin von Reha-aktiv. Darauf sollten Sie bei Ihrer Wahl auf jeden Fall achten:</p>
+                </div>
+            </div>
+        </section>
+        <div class="card-deck border-top py-4">
+            <div class="card shadow-sm">
+                <picture>
+                    <source srcset="{{ asset('media/SCOOTERACC OF27_web.webp') }}" type="image/webp">
+                    <source srcset="{{ asset('media/SCOOTERACC OF27_web.jp2') }}" type="image/jp2">
+                    <img src="{{ asset('media/SCOOTERACC OF27_web.jpg') }}" class="card-img-top" alt="Colibri Akku">
+                </picture>
+                <div class="card-body">
+                <h4 class="card-title btn-link-red">Akku- und Motorleistung</h4>
+                <p class="card-text text-justify">Akku/Batterie und Motor bestimmen Reichweite und Steigf&auml;higkeit. Kompakte Ger&auml;te f&uuml;r Haus und Garten schaffen bis zu 12 km, gro&szlig;e Modelle fahren bis zu 70 km mit einer Ladung und auch Steigungen von bis zu 21 % sind auf festem Untergrund f&uuml;r Fahrzeuge mit gro&szlig;en Elektromotoren kein Problem.</p>
+                </div>
+            </div>
+            <div class="card shadow-sm">
+                <picture>
+                    <source srcset="{{ asset('media/SCOOTERACC OF34_web.webp') }}" type="image/webp">
+                    <source srcset="{{ asset('media/SCOOTERACC OF34_web.jp2') }}" type="image/jp2">
+                    <img src="{{ asset('media/SCOOTERACC OF34_web.jpg') }}" class="card-img-top" alt="Colibri Auto">
+                </picture>
+                <div class="card-body">
+                <h4 class="card-title btn-link-red">Bei Wind und Wetter</h4>
+                <p class="card-text text-justify">Wer einen Scooter ben&ouml;tigt, der ben&ouml;tigt ihn bei jedem Wetter. Ein wetterfestes Cape f&uuml;r den Fahrer ist deshalb sinnvoll. Und weil nicht jeder eine Garage besitzt, sollte die Abdeckung f&uuml;r das geparkte Fahrzeug nicht vergessen werden.</p>
+                </div>
+            </div>
+            <div class="card shadow-sm">
+                <picture>
+                    <source srcset="{{ asset('media/SCOOTERACC OF22_web.webp') }}" type="image/webp">
+                    <source srcset="{{ asset('media/SCOOTERACC OF22_web.jp2') }}" type="image/jp2">
+                    <img src="{{ asset('media/SCOOTERACC OF22_web.jpg') }}" class="card-img-top" alt="Colibri Zubeh&ouml;r">
+                </picture>
+                <div class="card-body">
+                    <h4 class="card-title btn-link-red">Wenn mehr mit muss&hellip;</h4>
+                    <p class="card-text text-justify">Ob Einkaufstaschen, Ersatzbatterie oder Befestigungsm&ouml;glichkeiten f&uuml;r Hilfsmittel wie Sauerstoffflaschen, Falt-Rollator oder Gehstock: Bei der Wahl Ihres E-Scooters sollten Sie schon vorher wissen, was alles transportiert werden muss.
+                        <button type="button" class="btn btn-sm btn-link-red float-right" data-toggle="popover" data-html="true" data-trigger="focus" data-placement="left" title="Beratungshinweis" data-content="<p>&Uuml;ber das entsprechende Zubeh&ouml;r sollten Sie sich vorab bei den Spezialisten Ihres Sanit&auml;tshauses erkundigen. Hier erfahren Sie nat&uuml;rlich auch nochmals alles, was Sie &uuml;ber Einsatzbereich, Gr&ouml;&szlig;e, Gewicht, Motor- und Akku-/Batterieleistung wissen wollen.</p>"><i class="fas fa-info-circle"></i> </button>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </article>
+    <div class="d-flex justify-content-between my-4 border-top">
+        <a href="{{ path('home') }}" title="Startseite" class="btn btn-lg btn-link"><i class="pt-1 fas fa-chevron-left"></i>  zur Startseite</a>
+    <a href="{{ path('rollator-advice') }}" title="Kaufberatung f&uuml;r Rollatoren" class="btn btn-lg btn-link">zur Kaufberatung f&uuml;r Rollatoren <i class="pt-1 fas fa-chevron-right"></i> </a>
+    </div>
+</div>
+{% endblock %}

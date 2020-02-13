@@ -25,9 +25,12 @@ class Sitemap extends AbstractController
      */
     public function show(Request $request)
     {
-        $urls = array();
+        $urls = [];
         $hostname = $request->getSchemeAndHttpHost();
         $urls[] = $this->generateUrl('home');
+        $urls[] = $this->generateUrl('scooter-advice');
+        $urls[] = $this->generateUrl('rollator-advice');
+        $urls[] = $this->generateUrl('imprint');
 
         $response = new Response(
             $this->renderView('sitemap.html.twig', array( 'urls' => $urls,
