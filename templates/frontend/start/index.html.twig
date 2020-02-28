@@ -1,7 +1,7 @@
 {% extends 'base.html.twig' %}
 {% block body %}
     {%  include 'frontend/start/nav.html.twig' %}
-    <div class="parallax-window" data-parallax="scroll" data-image-src="{{ asset('media/senioren_background_web.jpg') }}">
+    <div class="parallax-window" data-parallax="scroll" data-image-src="{{ asset('build/media/senioren_background_web.jpg') }}">
         <div class="parallax-content"></div>
     </div>
     {% block body_intro %}
@@ -15,12 +15,12 @@
     {% endblock %}
     {% block body_content_main %}
     {% include 'frontend/start/rollator.html.twig' %}
-    <div class="parallax-window" data-parallax="scroll" data-image-src="{{ asset('media/rollikinder_background_web.jpg') }}">
+    <div class="parallax-window" data-parallax="scroll" data-image-src="{{ asset('build/media/rollikinder_background_web.jpg') }}">
         <div class="parallax-content">
         </div>
     </div>
     {% include 'frontend/start/rollstuhl.html.twig' %}
-    <div class="parallax-window" data-parallax="scroll" data-image-src="{{ asset('media/opaenkel_background_web.jpg') }}">
+    <div class="parallax-window" data-parallax="scroll" data-image-src="{{ asset('build/media/opaenkel_background_web.jpg') }}">
         <div class="parallax-content">
         </div>
     </div>

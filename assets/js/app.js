@@ -6,23 +6,23 @@
  */
 
 // any CSS you require will output into a single css file (app.css in this case)
-
+import '../css/global.scss';
 // Need jQuery? Install it with "yarn add jquery", then uncomment to require it.
-const $ = require('jquery');
-global.$ = global.jQuery = $;
-require('bootstrap');
-require('@fortawesome/fontawesome-free/js/all');
-require('jquery-parallax.js');
+import $ from 'jquery';
+import 'bootstrap'
+import '@fortawesome/fontawesome-free/js/all.min';
+import 'jquery-parallax.js';
 
 var $animation_elements = $('.animation-element');
 var $window = $(window);
 
-function check_if_in_view() {
+function check_if_in_view()
+{
     var window_height = $window.height();
     var window_top_position = $window.scrollTop();
     var window_bottom_position = (window_top_position + window_height);
 
-    $.each($animation_elements, function() {
+    $.each($animation_elements, function () {
         var $element = $(this);
         var element_height = $element.outerHeight();
         var element_top_position = $element.offset().top;
@@ -44,4 +44,4 @@ $window.on('scroll resize', check_if_in_view);
 $window.trigger('scroll');
 $(function () {
     $('[data-toggle="popover"]').popover()
-})
+});

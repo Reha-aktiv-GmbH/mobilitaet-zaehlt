@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <title>{% block title %}Mobilit&auml;t - weil dabei sein wichtig ist!{% endblock %}</title>
         {% block stylesheets %}
-           <link rel="stylesheet" href="{{ asset('build/global.css') }}">
+           {{ encore_entry_link_tags('app')}}
         {% endblock %}
         {% block gtm_script %}
         <!-- Google Tag Manager -->
@@ -26,15 +26,14 @@
         {% endblock %}
         <div class="siegel d-none d-md-flex">
             <picture>
-                <source srcset="{{ asset('media/testsiegel_web.webp') }}" type="image/webp">
-                <source srcset="{{ asset('media/testsiegel_web.jp2') }}" type="image/jpeg2000">
-                <img src="{{ asset('media/testsiegel_web.jpg') }}" class="img-fluid" width="175" />
+                <source srcset="{{ asset('build/media/testsiegel_web.webp') }}" type="image/webp">
+                <source srcset="{{ asset('build/media/testsiegel_web.jp2') }}" type="image/jpeg2000">
+                <img src="{{ asset('build/media/testsiegel_web.jpg') }}" class="img-fluid" width="175" />
             </picture>
         </div>
         {% block body %}{% endblock %}
         {% block javascripts %}
-            <script type="text/javascript" src="{{ asset('build/runtime.js') }}"></script>
-           <script type="text/javascript" src="{{ asset('build/app.js') }}"></script>
+           {{encore_entry_script_tags('app')}}
         {% endblock %}
     </body>
 </html>
